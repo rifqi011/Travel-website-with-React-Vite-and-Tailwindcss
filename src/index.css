@@ -1,0 +1,29 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "Figtree", serif;
+}
+
+.container {
+	width: 90%;
+	margin-inline: auto;
+}
+
+@media screen and (min-width: 968px) {
+	.container {
+		width: 80%;
+	}
+
+	.section {
+		min-height: 100vh;
+	}
+}
+
+.section {
+	min-height: 100svh;
+}
