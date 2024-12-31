@@ -9,7 +9,7 @@ export default function HomeDetails() {
 				<Label>Bali, Indonesia</Label>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 			</div>
-			<ButtonSecondary href={"#"}>
+			<ButtonSecondary href={"#about"}>
 				<p>Explore more</p>
 
                 <ArrowDownIcon className="w-6" />

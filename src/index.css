@@ -5,8 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Figtree", serif;
+}
+
+p {
+    font-weight: 300;
 }
 
 .container {
