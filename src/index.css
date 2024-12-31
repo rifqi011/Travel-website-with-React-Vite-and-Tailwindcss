@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    font-weight: 300;
+	font-weight: 300;
 }
 
 .container {
@@ -34,4 +34,30 @@ p {
 
 .section {
 	min-height: 100svh;
+}
+
+/* Swiper */
+/* Styling pagination */
+.swiper-pagination {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10; /* Ensure pagination is above other elements */
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	width: 20px; /* Lebar lonjong */
+	height: 5px; /* Tinggi lonjong */
+	background-color: #fff; /* Warna biru */
+	opacity: 1;
+	transition: all 0.3s ease;
+	border-radius: 50px; /* Membuat bentuk lonjong */
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #299cdf; /* Warna biru lebih gelap saat aktif */
 }

@@ -1,5 +1,6 @@
 import About from "./sections/About"
 import Home from "./sections/Home"
+import Packages from "./sections/Packages"
 import Services from "./sections/Services"
 
 export default function App() {
@@ -10,6 +11,8 @@ export default function App() {
             <About />
 
             <Services />
+
+            <Packages />
 		</>
 	)
 }

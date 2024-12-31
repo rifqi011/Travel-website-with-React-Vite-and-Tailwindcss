@@ -43,7 +43,7 @@ export default function Home() {
 			{/* Container untuk gambar latar belakang */}
 			<div className="absolute inset-0 -z-10 w-full h-screen">
 				{HeroData.map((data, index) => (
-					<div key={index} className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`} style={{ backgroundImage: `url(${data.images})` }}></div>
+					<div key={index} className={`h-svh absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`} style={{ backgroundImage: `url(${data.images})` }}></div>
 				))}
 			</div>
 			<h1 className="text-center text-4xl container">Begin your dream journey with our expert guidance and support</h1>

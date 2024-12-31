@@ -9,7 +9,7 @@ export default function HomeDetails({ location, description }) {
                 <Label>{location}</Label>
                 <p>{description}</p>
 			</div>
-			<ButtonSecondary href={"#about"}>
+            <ButtonSecondary href={"#about"}>
 				<p>Explore more</p>
 
 				<ArrowDownIcon className="w-6" />
