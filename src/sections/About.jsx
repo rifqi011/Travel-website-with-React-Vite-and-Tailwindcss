@@ -18,7 +18,7 @@ export default function About() {
 
 	return (
 		<Section id="about" title={"about us"} description={"We are passionate team of travel enthusiasts dedicated to making your travel dreams come true. Our mission is to provide you with best travel experiences"}>
-			<div className="flex justify-between items-center pt-4">
+			<div className="flex justify-between items-center">
 				{AboutData.map((data, index) => (
 					<div key={index} className="text-center">
 						<h4 className="text-2xl">{data.quantity}+</h4>
