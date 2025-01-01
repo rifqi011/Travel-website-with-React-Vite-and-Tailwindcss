@@ -46,7 +46,7 @@ export default function Home() {
 					<div key={index} className={`h-svh absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`} style={{ backgroundImage: `url(${data.images})` }}></div>
 				))}
 			</div>
-			<h1 className="text-center text-4xl container">Begin your dream journey with our expert guidance and support</h1>
+			<h1 className="text-center text-4xl container md:text-5xl lg:text-6xl lg:max-w-[70%]">Begin your dream journey with our expert guidance and support</h1>
 			<HomeDetails location={HeroData[currentIndex].location} description={HeroData[currentIndex].description} />
 		</section>
 	)

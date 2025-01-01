@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Section from "./Section"
+import Section from "../components/Section"
 
 const FAQsData = [
 	{
@@ -25,11 +25,11 @@ const FAQsData = [
 ]
 
 export default function FAQs() {
-    const [activeIndex, setActiveIndex] = useState(0)
+	const [activeIndex, setActiveIndex] = useState(0)
 
-    const toggleFAQ = (index) => {
-        setActiveIndex(activeIndex === index ? null : index)
-    }
+	const toggleFAQ = (index) => {
+		setActiveIndex(activeIndex === index ? null : index)
+	}
 
 	return (
 		<Section id={"faqs"} title={"FAQ"} description={"Frequently Asked Questions"}>

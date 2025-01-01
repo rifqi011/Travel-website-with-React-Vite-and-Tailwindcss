@@ -1,4 +1,4 @@
-import Section from "./Section"
+import Section from "../components/Section"
 import Card from "../components/Card"
 import ButtonSecondary from "../components/ButtonSecondary"
 import Label from "../components/Label"
@@ -40,7 +40,7 @@ export default function Packages() {
 					loop={false}
 					pagination={{
 						clickable: true,
-						el: '.swiper-pagination', // Ensure pagination element is correctly targeted
+						el: ".swiper-pagination", // Ensure pagination element is correctly targeted
 					}}
 					modules={[Pagination]} // Add Pagination module
 					className="relative"
