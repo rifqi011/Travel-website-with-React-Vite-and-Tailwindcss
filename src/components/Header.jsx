@@ -42,7 +42,7 @@ export default function Header() {
 			<NavigationMenu isOpen={menuOpen} closeMenu={closeMenu} menuRef={menuRef} />
 
 			{/* hamburger */}
-			<button onClick={toggleMenu} ref={buttonRef}>
+			<button onClick={toggleMenu} ref={buttonRef} className="lg:hidden">
 				<HamburgerIcon isOpen={menuOpen} />
 			</button>
 		</header>

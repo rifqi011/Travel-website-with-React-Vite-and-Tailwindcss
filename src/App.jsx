@@ -10,15 +10,15 @@ export default function App() {
 		<>
 			<Home />
 
-            <About />
+			<About />
 
-            <Services />
+			<Services />
 
-            <Packages />
+			<Packages />
 
-            <FAQs />
+			<FAQs />
 
-            <Footer />
+			<Footer />
 		</>
 	)
 }
