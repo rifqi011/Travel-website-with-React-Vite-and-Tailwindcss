@@ -32,7 +32,7 @@ export default function Home() {
 				setCurrentIndex((prevIndex) => (prevIndex + 1) % HeroData.length)
 				setIsFading(false) // Mulai animasi fade in
 			}, 1000) // Durasi fade out
-		}, 5000) // Interval antar transisi gambar
+		}, 7000) // Interval antar transisi gambar
 
 		return () => clearInterval(interval) // Bersihkan interval saat komponen unmount
 	}, [])
