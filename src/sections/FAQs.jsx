@@ -32,8 +32,8 @@ export default function FAQs() {
 	}
 
 	return (
-		<Section id={"faqs"} title={"FAQ"} description={"Frequently Asked Questions"}>
-			<div className="flex flex-col mt-4 gap-3">
+		<Section id={"faqs"} title={"FAQ"} subtitle={"Frequently Asked Questions"} description={"We believe in power of collective action to address the urgent environmental challenges facing our planet"} className={"lg:flex-row"}>
+			<div className="flex flex-col mt-4 gap-3 lg:flex-1">
 				{FAQsData.map((data, index) => (
 					<div key={index} onClick={() => toggleFAQ(index)} className="border border-gray-600 p-3 flex flex-col rounded-2xl">
 						<h5 className="font-medium text-lg">{data.title}</h5>

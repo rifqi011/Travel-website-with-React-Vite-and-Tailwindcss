@@ -21,7 +21,7 @@ export default function About() {
 	]
 
 	return (
-		<Section id="about" title={"about us"} className="md:flex-row gap-8 items-center" description={"We are passionate team of travel enthusiasts dedicated to making your travel dreams come true. Our mission is to provide you with best travel experiences"}>
+		<Section id="about" title={"about us"} className="md:flex-row gap-8 items-center" subtitle={"We are passionate team of travel enthusiasts dedicated to making your travel dreams come true. Our mission is to provide you with best travel experiences"}>
 			<div className="grid grid-cols-2 gap-x-4 gap-y-8 md:flex-1">
 				{AboutData.map((data, index) => (
 					<div key={index} className="text-center">

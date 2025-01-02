@@ -32,7 +32,7 @@ const PackageData = [
 
 export default function Packages() {
 	return (
-		<Section id={"package"} title={"our package"} description={"Discover our exceptional selection of travel packages and destinations"} className="text-center">
+		<Section id={"package"} title={"our package"} subtitle={"Discover our exceptional selection of travel packages and destinations"} className="text-center">
 			<div className="flex gap-3 overflow-x-auto mt-4 relative">
 				<Swiper
 					spaceBetween={20}
@@ -41,7 +41,12 @@ export default function Packages() {
 					pagination={{
 						clickable: true,
 						el: ".swiper-pagination", // Ensure pagination element is correctly targeted
-					}}
+                    }}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 2
+                        }
+                    }}
 					modules={[Pagination]} // Add Pagination module
 					className="relative"
 				>
@@ -57,7 +62,7 @@ export default function Packages() {
 										<p className="text-xs">Choose Package</p>
 									</ButtonSecondary>
 								}
-								className={"justify-between"}
+								className={"justify-between items-start"}
 							/>
 						</SwiperSlide>
 					))}

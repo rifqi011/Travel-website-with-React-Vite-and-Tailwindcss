@@ -21,11 +21,10 @@ const ServiceData = [
 
 export default function Services() {
 	return (
-		<Section id={"services"} title={"our services"} description={"Explore endless option with our services"}>
-			<p className="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, reiciendis?</p>
-			<div className="flex flex-col gap-3">
+		<Section id={"services"} title={"our services"} subtitle={"Explore endless option with our services"} description={"We offer a wide range of services to make your travel experience as seamless as possible"}>
+			<div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:grid-rows-2">
 				{ServiceData.map((service, index) => (
-					<Card key={index} title={service.title} description={service.description} image={service.image} className={"justify-end"} />
+					<Card key={index} title={service.title} description={service.description} image={service.image} className={`justify-end ${index === 0 ? "md:row-span-2" : ""}`} />
 				))}
 			</div>
 		</Section>
