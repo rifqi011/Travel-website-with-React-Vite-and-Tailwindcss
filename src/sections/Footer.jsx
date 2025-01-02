@@ -25,18 +25,18 @@ export default function Footer() {
 
 	return (
 		<section id="footer" className="w-full flex flex-col text-white gap-4 pt-8">
-			<div className="bg-center bg-cover flex flex-col justify-center items-center gap-8 container h-[60svh] rounded-2xl" style={{ backgroundImage: `url(${BaliImage})` }}>
-				<h1 className="text-center text-4xl container">Don't wait any longer! Start your adventure and explore new experiences today</h1>
+			<div className="bg-center bg-cover flex flex-col justify-center items-center gap-8 h-[60svh] mx-[5%] rounded-2xl lg:h-[80vh]" style={{ backgroundImage: `url(${BaliImage})` }}>
+				<h1 className="text-center text-4xl container md:text-6xl">Don't wait any longer! Start your adventure and explore new experiences today</h1>
 
 				<Form>
-					<input type="email" placeholder="Drop your email address" className="bg-transparent outline-none placeholder-white font-light flex-1 min-w-[200px]" />
+					<input type="email" placeholder="Drop your email address" className="bg-transparent outline-none placeholder-white font-light flex-1 min-w-[200px] pl-3 md:min-w-[300px]" />
 				</Form>
 			</div>
 
 			<footer className="w-full bg-black flex flex-col px-[5%] py-10 gap-8">
-				<div className="flex flex-col justify-between gap-8">
+				<div className="flex flex-col justify-between gap-8 lg:flex-row lg:gap-32">
 					{/* footer content */}
-					<div className="flex flex-col gap-6">
+					<div className="flex flex-col gap-6 flex-1">
 						<a href="">
 							<h1 className="text-3xl text-white font-sourGummy">Wanderlust</h1>
 						</a>
@@ -58,27 +58,27 @@ export default function Footer() {
 					</div>
 
 					{/* footer menu */}
-					<div className="flex flex-col gap-6">
+					<div className="flex flex-col gap-6 flex-1 md:flex-row md:justify-between">
 						{FooterMenu.map((menu, index) => (
 							<div key={index} className="flex flex-col gap-3">
 								<h4 className="text-lg">{menu.title}</h4>
 								<ul className="flex flex-col gap-2">
 									{menu.links.map((link, linkIndex) => (
 										<li key={linkIndex}>
-                                            <a href="">{link}</a>
+											<a href="">{link}</a>
 										</li>
 									))}
 								</ul>
 							</div>
 						))}
 					</div>
-                </div>
+				</div>
 
-                <hr />
+				<hr />
 
-                <div className="">
-                    <p>&copy; Wanderlust, {year} All right reserved.</p>
-                </div>
+				<div className="">
+					<p>&copy; Wanderlust, {year} All right reserved.</p>
+				</div>
 			</footer>
 		</section>
 	)
